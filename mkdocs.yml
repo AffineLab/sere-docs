@@ -7,14 +7,7 @@ theme:
   language: en
   features:
     - navigation.sections
-    - navigation.instant
     - content.code.copy
-
-theme:
-  name: material
-  language: zh
-  features:
-    - navigation.instant
 
 nav:
   - Home: index.md
@@ -22,13 +15,14 @@ nav:
 plugins:
   - search
   - i18n:
-      default_language: en
       languages:
-        en: English
-        zh: 中文
-      nav_translations:
-        zh:
-          Home: 主页
+        - locale: en
+          name: English
+          default: true
+          build: true
+        - locale: zh
+          name: 中文
+          build: true
 
 markdown_extensions:
   - admonition
