@@ -1,4 +1,4 @@
-# Welcome to AFFINELAB
+# Welcome to AffineLab Knowledge Docs
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 

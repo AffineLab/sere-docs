@@ -1,1 +1,24 @@
-site_name: My Docs
+site_name: AffineLab Knowledge Docs
+site_description: A knowledge base for sharing insights on selected technical topics. Built with MkDocs.
+site_dir: site
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.sections
+    - navigation.instant
+    - content.code.copy
+
+nav:
+  - Home: index.md
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - toc:
+      permalink: true
