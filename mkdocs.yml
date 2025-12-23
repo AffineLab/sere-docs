@@ -22,6 +22,7 @@ plugins:
           build: true
         - locale: zh
           name: 中文
+          link:/zh/
           build: true
 
 markdown_extensions:
