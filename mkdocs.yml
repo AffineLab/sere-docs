@@ -1,6 +1,6 @@
 site_name: AffineLab Knowledge Docs
 site_description: A knowledge base for sharing insights on selected technical topics. Built with MkDocs.
-site_url: https://affinelab.github.io/sere-docs/
+site_url: !ENV [SITE_URL, "http://127.0.0.1:8000/"]
 site_dir: site
 
 theme:
@@ -8,7 +8,6 @@ theme:
   language: en
   features:
     - navigation.sections
-    - navigation.instant
     - content.code.copy
 
 nav:
@@ -17,7 +16,6 @@ nav:
 plugins:
   - search
   - i18n:
-      default_language: en
       languages:
         - locale: en
           name: English
@@ -26,6 +24,15 @@ plugins:
         - locale: zh
           name: 中文
           build: true
+
+extra:
+  alternate:
+    - name: English
+      link: !ENV [SITE_URL, "http://127.0.0.1:8000/"]
+      lang: en
+    - name: 中文
+      link: !ENV [SITE_URL_ZH, "http://127.0.0.1:8000/zh/"]
+      lang: zh
 
 markdown_extensions:
   - admonition

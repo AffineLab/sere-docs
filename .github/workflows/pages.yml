@@ -31,6 +31,9 @@ jobs:
         run: pip install -r requirements.txt
       - name: Build site
         run: mkdocs build
+        env:
+          SITE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
+          SITE_URL_ZH: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/zh/
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
