@@ -1,5 +1,6 @@
 site_name: AffineLab Knowledge Docs
 site_description: A knowledge base for sharing insights on selected technical topics. Built with MkDocs.
+site_url: https://affinelab.github.io/sere-docs/
 site_dir: site
 
 theme:
@@ -9,12 +10,6 @@ theme:
     - navigation.sections
     - navigation.instant
     - content.code.copy
-
-theme:
-  name: material
-  language: zh
-  features:
-    - navigation.instant
 
 nav:
   - Home: index.md
