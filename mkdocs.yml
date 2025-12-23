@@ -10,6 +10,12 @@ theme:
     - navigation.instant
     - content.code.copy
 
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.instant
+
 nav:
   - Home: index.md
 
