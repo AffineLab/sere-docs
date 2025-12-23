@@ -15,6 +15,14 @@ nav:
 
 plugins:
   - search
+  - i18n:
+      default_language: en
+      languages:
+        en: English
+        zh: 中文
+      nav_translations:
+        zh:
+          Home: 主页
 
 markdown_extensions:
   - admonition
