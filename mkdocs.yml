@@ -15,12 +15,12 @@ nav:
 plugins:
   - search
   - i18n:
+      default_language: en
       languages:
-        - locale: en
+        en:
           name: English
-          default: true
           build: true
-        - locale: zh
+        zh:
           name: 中文
           build: true
 
