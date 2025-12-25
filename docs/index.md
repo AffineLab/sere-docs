@@ -1,17 +1,17 @@
-# Welcome to AffineLab Knowledge Docs.
+# 欢迎来到 AFFINELAB
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+完整文档请访问 [mkdocs.org](https://www.mkdocs.org)。
 
-## Commands
+## 常用命令
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+* `mkdocs new [dir-name]` - 创建新项目
+* `mkdocs serve` - 启动带热更新的文档服务
+* `mkdocs build` - 构建文档站点
+* `mkdocs -h` - 打印帮助信息并退出
 
-## Project layout
+## 项目结构
 
-    mkdocs.yml    # The configuration file.
+    mkdocs.yml    # 配置文件
     docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+        index.md  # 文档首页
+        ...       # 其他页面、图片或资源
