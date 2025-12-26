@@ -4,7 +4,7 @@
 
 ## 读卡器基本介绍与使用说明
 
-### 一、硬件概述
+### 硬件概述
 
 **主控芯片：** 本读卡器采用 **STM32F072** 作为主控芯片。
 
@@ -26,7 +26,7 @@ Monica 家族目前包括以下三个版本：
 
 采用哑光 PETG 材料 3D 打印，兼具美观与耐磨性。
 
-### 二、基础连接步骤
+### 基础连接步骤
 
 !!! note "注意"
     无论游玩哪款游戏都先需要按照这个步骤进行
@@ -39,14 +39,14 @@ Monica 家族目前包括以下三个版本：
 
 ![image.png](../assets/images/aimemanual/Monicalite/image.png)
 
-### 三、SEGA 系游戏设置指南
+### SEGA 系游戏设置指南
 
 <aside>
 💡 本产品仅支持纯净包，如果你使用了munet的懒人包，请往下翻阅常见问题
 
 </aside>
 
-1. **设置端口号**
+#### 设置端口号
     
     在设备管理器中右键点击 “**USB 串行设备**”，依次选择：
     
@@ -74,7 +74,7 @@ Monica 家族目前包括以下三个版本：
 
 </aside>
 
-**修改 segatools.ini**
+#### 修改 segatools.ini
 
 在游戏文件夹中找到 **`segatools.ini`** 文件并编辑：
 
@@ -98,20 +98,20 @@ Monica 家族目前包括以下三个版本：
 
 </aside>
 
-### 四、KONAMI 系游戏设置指南
+### KONAMI 系游戏设置指南
 
 <aside>
 💡 理论上支持通过spice启动的所有konami音游，包含SDVX、IIDX、Jubeat、Gitadora、Pop’n MUSIC等音游。
 
 </aside>
 
-1. **设备管理器设置**
+#### 设备管理器设置
     
     参照前文 SEGA 游戏部分的设置步骤。
     
     唯一区别是：**只需确保端口号不与其他设备冲突**，无需特定编号。
     
-2. **Spice 设置**
+#### Spice 设置
     
     打开游戏目录下的 **`spicecfg.exe`**，在 “Advanced” 选项卡中：
     
@@ -120,15 +120,15 @@ Monica 家族目前包括以下三个版本：
 
 ![image.png](../assets/images/aimemanual/Monicalite/image%203.png)
 
-### 五、常见问题
+### 常见问题
 
-1.q：为什么SDEZ（舞萌）按照教程操作也无法识别读卡器？
+#### q：为什么SDEZ（舞萌）按照教程操作也无法识别读卡器？
 
    a：使用懒人包导致的，将最底下的压缩包解压即可。
 
 ![image.png](../assets/images/aimemanual/Monicalite/image%204.png)
 
-2.q：为什么会出现卡在aime check的情况？
+#### q：为什么会出现卡在aime check的情况？
 
     a：munet的aimedb问题，在segatools.ini中注释掉aimedb一项即可，修改完之后必须重启电脑
 
