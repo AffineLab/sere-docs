@@ -60,7 +60,6 @@ Monica 家族目前包括以下三个版本：
 
 <aside>
 ❗ 注意注意：如果端口中有其它设备占用了读卡器的端口号，请将该设备的端口号设置成其他数字。
-
 </aside>
 
 ![image.png](../assets/images/aimemanual/Monicalite/image%201.png)

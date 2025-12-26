@@ -34,7 +34,7 @@ theme:
 
 nav:
   - Home: index.md
-  - AimeManual: AimeManual/MonicaLite(2in1).md
+  - AimeManual: AimeManual/MonicaLite.md
 
 plugins:
   - search
