@@ -1,13 +1,10 @@
 # Monica-Lite读卡器使用教程（二合一）
 
-Created: 2025年10月11日 01:25
-Tags: 教程, 读卡器
-
 ![b4f8d2420e21f4622744bb75d4ffd4b9.png](../assets/images/aimemanual/Monicalite/b4f8d2420e21f4622744bb75d4ffd4b9.png)
 
-# 读卡器基本介绍与使用说明
+## 读卡器基本介绍与使用说明
 
-## 一、硬件概述
+### 一、硬件概述
 
 **主控芯片：** 本读卡器采用 **STM32F072** 作为主控芯片。
 
@@ -29,7 +26,7 @@ Monica 家族目前包括以下三个版本：
 
 采用哑光 PETG 材料 3D 打印，兼具美观与耐磨性。
 
-## 二、基础连接步骤
+### 二、基础连接步骤
 
 !!! note "注意"
     无论游玩哪款游戏都先需要按照这个步骤进行
@@ -42,7 +39,7 @@ Monica 家族目前包括以下三个版本：
 
 ![image.png](../assets/images/aimemanual/Monicalite/image.png)
 
-## 三、SEGA 系游戏设置指南
+### 三、SEGA 系游戏设置指南
 
 <aside>
 💡 本产品仅支持纯净包，如果你使用了munet的懒人包，请往下翻阅常见问题
@@ -101,7 +98,7 @@ Monica 家族目前包括以下三个版本：
 
 </aside>
 
-## 四、KONAMI 系游戏设置指南
+### 四、KONAMI 系游戏设置指南
 
 <aside>
 💡 理论上支持通过spice启动的所有konami音游，包含SDVX、IIDX、Jubeat、Gitadora、Pop’n MUSIC等音游。
@@ -123,7 +120,7 @@ Monica 家族目前包括以下三个版本：
 
 ![image.png](../assets/images/aimemanual/Monicalite/image%203.png)
 
-## 五、常见问题
+### 五、常见问题
 
 1.q：为什么SDEZ（舞萌）按照教程操作也无法识别读卡器？
 

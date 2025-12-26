@@ -10,10 +10,13 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.top
-    - content.code.copy
     - search.suggest
     - search.highlight
     - search.share
+    - content.code.copy
+    - content.action.edit
+    - content.action.view
+    - content.page.meta
 
   palette:
     # nightmode
@@ -34,7 +37,8 @@ theme:
 
 nav:
   - Home: index.md
-  - AimeManual: AimeManual/MonicaLite.md
+  - AimeManual:
+      - MonicaLite: AimeManual/MonicaLite.md
 
 plugins:
   - search
@@ -47,6 +51,10 @@ plugins:
         - locale: en
           name: English
           build: true
+  - git-revision-date-localized:
+      type: datetime
+      locale: zh
+
 
 extra:
   alternate:
@@ -56,6 +64,7 @@ extra:
     - name: English
       link: !ENV [SITE_URL, "http://127.0.0.1:8000/en/"]
       lang: en
+  generator: false
 
 markdown_extensions:
   - admonition
@@ -63,4 +72,5 @@ markdown_extensions:
   - def_list
   - toc:
       permalink: true
+      toc_depth: 1-3
   - pymdownx.details
