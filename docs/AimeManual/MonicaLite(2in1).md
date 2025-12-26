@@ -3,7 +3,7 @@
 Created: 2025年10月11日 01:25
 Tags: 教程, 读卡器
 
-![b4f8d2420e21f4622744bb75d4ffd4b9.png](Monica-Lite%E8%AF%BB%E5%8D%A1%E5%99%A8%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B%EF%BC%88%E4%BA%8C%E5%90%88%E4%B8%80%EF%BC%89/b4f8d2420e21f4622744bb75d4ffd4b9.png)
+![b4f8d2420e21f4622744bb75d4ffd4b9.png](../assets/images/aimemanual/Monicalite/b4f8d2420e21f4622744bb75d4ffd4b9.png)
 
 # 读卡器基本介绍与使用说明
 
@@ -31,10 +31,8 @@ Monica 家族目前包括以下三个版本：
 
 ## 二、基础连接步骤
 
-<aside>
-💡 无论游玩哪款游戏都先需要按照这个步骤进行
-
-</aside>
+!!! note "注意"
+    无论游玩哪款游戏都先需要按照这个步骤进行
 
 1. 使用 **Type-C 数据线** 连接读卡器与电脑。
 2. 打开 **设备管理器**，在 **“端口 (COM 和 LPT)”** 分类下能看到 **“USB 串行设备”**。
@@ -42,7 +40,7 @@ Monica 家族目前包括以下三个版本：
     - 更换 Type-C 数据线；
     - 或更换 USB 接口。
 
-![image.png](Monica-Lite%E8%AF%BB%E5%8D%A1%E5%99%A8%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B%EF%BC%88%E4%BA%8C%E5%90%88%E4%B8%80%EF%BC%89/image.png)
+![image.png](../assets/images/aimemanual/Monicalite/image.png)
 
 ## 三、SEGA 系游戏设置指南
 
@@ -65,7 +63,7 @@ Monica 家族目前包括以下三个版本：
 
 </aside>
 
-![image.png](Monica-Lite%E8%AF%BB%E5%8D%A1%E5%99%A8%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B%EF%BC%88%E4%BA%8C%E5%90%88%E4%B8%80%EF%BC%89/image%201.png)
+![image.png](../assets/images/aimemanual/Monicalite/image%201.png)
 
 | 游戏 | 读卡器端口号 | 默认波特率 | 备注 |
 | --- | --- | --- | --- |
@@ -89,7 +87,7 @@ Monica 家族目前包括以下三个版本：
 - 本读卡器采用串口直连方式，不需 AIMEIO 模块。
 - 可将该段内容删除，或在 `path` 前加分号注释。
 
-![image.png](Monica-Lite%E8%AF%BB%E5%8D%A1%E5%99%A8%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B%EF%BC%88%E4%BA%8C%E5%90%88%E4%B8%80%EF%BC%89/image%202.png)
+![image.png](../assets/images/aimemanual/Monicalite/image%202.png)
 
 ② 在 `[aime]` 部分：
 
@@ -124,7 +122,7 @@ Monica 家族目前包括以下三个版本：
     - 启用 **“CardIO HID Reader Support”**。
     - 保存设置后即可使用。
 
-![image.png](Monica-Lite%E8%AF%BB%E5%8D%A1%E5%99%A8%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B%EF%BC%88%E4%BA%8C%E5%90%88%E4%B8%80%EF%BC%89/image%203.png)
+![image.png](../assets/images/aimemanual/Monicalite/image%203.png)
 
 ## 五、常见问题
 
@@ -132,12 +130,12 @@ Monica 家族目前包括以下三个版本：
 
    a：使用懒人包导致的，将最底下的压缩包解压即可。
 
-![image.png](Monica-Lite%E8%AF%BB%E5%8D%A1%E5%99%A8%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B%EF%BC%88%E4%BA%8C%E5%90%88%E4%B8%80%EF%BC%89/image%204.png)
+![image.png](../assets/images/aimemanual/Monicalite/image%204.png)
 
 2.q：为什么会出现卡在aime check的情况？
 
     a：munet的aimedb问题，在segatools.ini中注释掉aimedb一项即可，修改完之后必须重启电脑
 
-![c4b2fdd9818173cf47f07849692e4291.png](Monica-Lite%E8%AF%BB%E5%8D%A1%E5%99%A8%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B%EF%BC%88%E4%BA%8C%E5%90%88%E4%B8%80%EF%BC%89/c4b2fdd9818173cf47f07849692e4291.png)
+![c4b2fdd9818173cf47f07849692e4291.png](../assets/images/aimemanual/Monicalite/c4b2fdd9818173cf47f07849692e4291.png)
 
-![image.png](Monica-Lite%E8%AF%BB%E5%8D%A1%E5%99%A8%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B%EF%BC%88%E4%BA%8C%E5%90%88%E4%B8%80%EF%BC%89/image%205.png)
+![image.png](../assets/images/aimemanual/Monicalite/image%205.png)

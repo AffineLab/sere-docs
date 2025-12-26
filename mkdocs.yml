@@ -7,8 +7,30 @@ theme:
   name: material
   language: en
   features:
-    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
     - content.code.copy
+    - search.suggest
+    - search.highlight
+    - search.share
+
+  palette:
+    # nightmode
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: 切换到暗色模式
+
+    # sunnymode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: 切换到明亮模式
 
 nav:
   - Home: index.md
@@ -28,12 +50,12 @@ plugins:
 
 extra:
   alternate:
-    - name: English
-      link: !ENV [SITE_URL, "http://127.0.0.1:8000/"]
-      lang: en
     - name: 中文
-      link: !ENV [SITE_URL_ZH, "http://127.0.0.1:8000/zh/"]
+      link: !ENV [SITE_URL_ZH, "http://127.0.0.1:8000/"]
       lang: zh
+    - name: English
+      link: !ENV [SITE_URL, "http://127.0.0.1:8000/en/"]
+      lang: en
 
 markdown_extensions:
   - admonition
@@ -41,3 +63,4 @@ markdown_extensions:
   - def_list
   - toc:
       permalink: true
+  - pymdownx.details
