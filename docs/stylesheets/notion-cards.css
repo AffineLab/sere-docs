@@ -1,0 +1,29 @@
+.cards > ul > li {
+    border-radius: .5rem !important;
+    padding: 0 !important;
+}
+
+.link {
+    display: block;
+}
+
+.link > img {
+    height: 220px;
+    width: 100%;
+    display: block;
+    border-top-left-radius: .5rem !important;
+    border-top-right-radius: .5rem !important;
+}
+.link > .txt {
+    height: 220px;
+    display: block;
+    color: var(--md-typeset-color);
+    background: rgba(255, 255, 255, 0.03);
+    padding: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: none;
+}
+.link > h4 {
+    padding-left: 12px;
+}

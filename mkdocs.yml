@@ -17,6 +17,7 @@ theme:
     - content.action.edit
     - content.action.view
     - content.page.meta
+    - content.cards
 
   palette:
     # nightmode
@@ -38,6 +39,7 @@ theme:
 nav:
   - Home: index.md
   - AimeManual:
+      - 概览: AimeManual/index.md
       - MonicaLite: AimeManual/MonicaLite.md
 
 plugins:
@@ -74,3 +76,11 @@ markdown_extensions:
       permalink: true
       toc_depth: 1-4
   - pymdownx.details
+  - attr_list
+  - md_in_html
+
+extra_css:
+  - stylesheets/notion-cards.css
+
+watch:
+  - docs/stylesheets
