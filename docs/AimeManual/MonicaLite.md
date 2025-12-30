@@ -30,67 +30,69 @@
 
 ### 基础连接步骤
 
-!!! note "注意"
+!!! danger "注意"
     无论游玩哪款游戏都先需要按照这个步骤进行
 
-1. 使用 **Type-C 数据线** 连接读卡器与电脑。
-2. 打开 **设备管理器**，在 **“端口 (COM 和 LPT)”** 分类下能看到 **“USB 串行设备”**。
-3. 若未显示此设备，请尝试：
-    - 更换 Type-C 数据线；
-    - 或更换 USB 接口。
+!!! info ""
+    1. 使用 **Type-C 数据线** 连接读卡器与电脑。
+    2. 打开 **设备管理器**，在 **“端口 (COM 和 LPT)”** 分类下能看到 **“USB 串行设备”**。
+    3. 若未显示此设备，请尝试：
+        - 更换 Type-C 数据线；
+        - 或更换 USB 接口。
 
-<div style="text-align:center;margin:8px;">
-    <img alt="image.png" src="../../assets/images/aimemanual/Monicalite/image.png">
-</div>
+    <div style="text-align:center;margin:8px;">
+        <img alt="image.png" src="../../assets/images/aimemanual/Monicalite/image.png">
+    </div>
 
 ### SEGA 系游戏设置指南
 
-!!! note "注意"
+!!! danger "注意"
     本产品仅支持纯净包，如果你使用了munet的懒人包，请往下翻阅常见问题
 
 #### 设置端口号
 
-!!! warning
-    如果端口中有其它设备占用了读卡器的端口号，请将该设备的端口号设置成其他数字。
-    
-    **属性 → 端口设置 → 高级**，即可修改端口号。
-    
-    请根据下表选择对应端口号：
-
-<div style="text-align:center;margin:8px;">
-    <img alt="image.png" src="../../assets/images/aimemanual/Monicalite/image%201.png">
-</div>
-
-| 游戏 | 读卡器端口号 | 默认波特率 | 备注 |
-| --- | --- | --- | --- |
-| ONGEKI, maimaiDX | COM1 | 高 |  |
-| maimai FiNALE（旧框）| COM2 | 低 | 不支持AIC卡 |
-| CHUNITHM | COM4 | 低（cvt），高（sp） |  |
-| Project DIVA, Initial D | COM10 | 低 |  |
-
 !!! note "注意"
     Chunithm的CVT即60HZ模式，对应旧框体。SP模式对应120HZ，新框体。
 
+!!! warning
+    如果端口中有其它设备占用了读卡器的端口号，请将该设备的端口号设置成其他数字。
+    
+!!! info ""
+    属性 → 端口设置 → 高级，即可修改端口号。
+        
+    请根据下表选择对应端口号：
+
+    <div style="text-align:center;margin:8px;">
+        <img alt="image.png" src="../../assets/images/aimemanual/Monicalite/image%201.png">
+    </div>
+
+    | 游戏 | 读卡器端口号 | 默认波特率 | 备注 |
+    | --- | --- | --- | --- |
+    | ONGEKI, maimaiDX | COM1 | 高 |  |
+    | maimai FiNALE（旧框）| COM2 | 低 | 不支持AIC卡 |
+    | CHUNITHM | COM4 | 低（cvt），高（sp） |  |
+    | Project DIVA, Initial D | COM10 | 低 |  |
+
 #### 修改 segatools.ini
+!!! info ""
+    在游戏文件夹中找到 **`segatools.ini`** 文件并编辑：
 
-在游戏文件夹中找到 **`segatools.ini`** 文件并编辑：
+    1.在 `[aimeio]` 部分：
 
-① 在 `[aimeio]` 部分：
+    - 本读卡器采用串口直连方式，不需 AIMEIO 模块。
+    - 可将该段内容删除，或在 `path` 前加分号注释。
 
-- 本读卡器采用串口直连方式，不需 AIMEIO 模块。
-- 可将该段内容删除，或在 `path` 前加分号注释。
+    <div style="text-align:center;margin:8px;">
+        <img alt="image.png" src="../../assets/images/aimemanual/Monicalite/image%202.png">
+    </div>
 
-<div style="text-align:center;margin:8px;">
-    <img alt="image.png" src="../../assets/images/aimemanual/Monicalite/image%202.png">
-</div>
+    2.在 `[aime]` 部分：
 
-② 在 `[aime]` 部分：
+    - 将 `enable=1` 修改为 `enable=0`。
 
-- 将 `enable=1` 修改为 `enable=0`。
+    3.**保存修改**（Ctrl + S），退出文件。
 
-③ **保存修改**（Ctrl + S），退出文件。
-
-④ 启动游戏后即可正常使用读卡器。
+    4.启动游戏后即可正常使用读卡器。
 
 !!! warning
     如果无法刷卡请重启电脑再试
@@ -101,13 +103,13 @@
     理论上支持通过spice启动的所有konami音游，包含SDVX、IIDX、Jubeat、Gitadora、Pop’n MUSIC等音游。
 
 #### 设备管理器设置
-
-参照前文 SEGA 游戏部分的设置步骤。
-    
-唯一区别是：**只需确保端口号不与其他设备冲突**，无需特定编号。
+!!! info ""
+    参照前文 SEGA 游戏部分的设置步骤。
+        
+    唯一区别是：**只需确保端口号不与其他设备冲突**，无需特定编号。
 
 #### Spice 设置
-
+!!! info ""
     打开游戏目录下的 **`spicecfg.exe`**，在 “Advanced” 选项卡中：
     
     - 启用 **“CardIO HID Reader Support”**。
