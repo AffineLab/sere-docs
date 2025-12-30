@@ -40,7 +40,8 @@ nav:
   - Home: index.md
   - AimeManual:
       - 概览: AimeManual/index.md
-      - MonicaLite: AimeManual/MonicaLite.md
+      - MonicaLite读卡器: AimeManual/MonicaLite.md
+      - Kobato读卡器: AimeManual/kobato.md
 
 plugins:
   - search
