@@ -119,6 +119,27 @@
         <img alt="image.png" src="../../assets/images/aimemanual/Monicalite/image%203.png">
     </div>
 
+### Namco 系游戏设置指南
+!!! note "注意"
+    - MonicaLite读卡器在更新"Monica_Lite_F072_2512270821.bin"固件后支持namco游戏刷卡。
+    - 使用原始Namco bngrw.dll与游戏通讯。对于太鼓达人，可以使用这个：[GitHub - gyt4/tal_no_bngrw_hook](https://github.com/gyt4/tal_no_bngrw_hook)
+#### namco使用教程
+!!! info ""
+    - 修改读卡器端口号为COM1
+    - 打开游戏根目录，找到config.toml文件，修改其中的[card_reader]值为false并保存
+
+```
+[card_reader]
+enabled= false
+[qr]
+enabled = true
+image_path=""
+[qr.data]
+serial=""
+type=0
+song_no=[]
+```
+
 ### 固件更新指南
 
 !!! note "需要准备"
