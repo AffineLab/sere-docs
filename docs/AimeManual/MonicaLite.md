@@ -30,7 +30,7 @@
 
 ### 基础连接步骤
 
-!!! danger "注意"
+!!! danger "必看"
     无论游玩哪款游戏都先需要按照这个步骤进行
 
 !!! info ""
@@ -47,16 +47,16 @@
 ### SEGA 系游戏设置指南
 
 !!! danger "注意"
-    本产品仅支持纯净包，如果你使用了munet的懒人包，请往下翻阅常见问题
+    本产品仅保证在纯净包中正常运行，如果你使用了懒人包，请往下翻阅常见问题
 
 #### 设置端口号
-
-!!! note "注意"
-    Chunithm的CVT即60HZ模式，对应旧框体。SP模式对应120HZ，新框体。
 
 !!! warning
     如果端口中有其它设备占用了读卡器的端口号，请将该设备的端口号设置成其他数字。
     
+!!! note "注意"
+    Chunithm的CVT即60HZ模式，对应旧框体。SP模式对应120HZ，新框体。
+
 !!! info ""
     属性 → 端口设置 → 高级，即可修改端口号。
         
@@ -115,28 +115,69 @@
     - 启用 **“CardIO HID Reader Support”**。
     - 保存设置后即可使用。
 
-<div style="text-align:center;margin:8px;">
-    <img alt="image.png" src="../../assets/images/aimemanual/Monicalite/image%203.png">
-</div>
+    <div style="text-align:center;margin:8px;">
+        <img alt="image.png" src="../../assets/images/aimemanual/Monicalite/image%203.png">
+    </div>
+
+### 固件更新指南
+
+!!! note "需要准备"
+    - 需要更新的固件(.bin文件，例如"Monica_Lite_F072_2512270821.bin")
+    - Monica跳转DFU.exe(群文件中下载)
+    - stm32cubeprog  [下载链接](https://www.st.com/en/development-tools/stm32cubeprog.html)
+
+!!! warning "注意"
+    根据ST论坛上官方反馈的BUG，F0这款芯片的USB下载存在一定问题，具体表现为尝试下载时提示“芯片读保护”（大意），遇到这种情况，官方提供的替代性解决方案是将USB接到一个USB扩展坞上即可下载（有的电脑主板USB口本身就是通过内置扩展坞扩展出来的，所以直接就可以下载。同理，一些笔记本电脑也可以直接下载）。
+    [参考链接](https://community.st.com/t5/stm32cubeprogrammer-mcus/dfu-mode-read-out-protection/td-p/682719)
+
+#### 进入DFU模式
+!!! info ""
+    打开"Monica跳转DFU.exe"，输入你的读卡器端口号即可进入dfu模式。
+
+#### 烧录固件
+!!! info ""
+    根据下图进行操作，然后点击"download"即可。
+    <div style="text-align:center;margin:8px;">
+        <img alt="image.png" src="../../assets/images/aimemanual/Monicalite/83f1c086-bc12-4822-ae94-e6dabb23230c.png">
+    </div>
 
 ### 常见问题
 
-#### 1.maimai按照教程操作也无法识别读卡器
-
+#### maimai无法识别读卡器
+!!! info ""
     用懒人包导致的问题，将最底下的压缩包解压即可。
 
-<div style="text-align:center;margin:8px;">
-    <img alt="image.png" src="../../assets/images/aimemanual/Monicalite/image%204.png">
-</div>
+    <div style="text-align:center;margin:8px;">
+        <img alt="image.png" src="../../assets/images/aimemanual/Monicalite/image%204.png">
+    </div>
 
-#### 2.一直卡在aime check
-
+#### maimai卡在aime check
+!!! info ""
     munet的aimedb问题，在segatools.ini中注释掉aimedb一项即可，修改完之后必须重启电脑
 
-<div style="text-align:center;margin:8px;">
-    <img alt="image.png" src="../../assets/images/aimemanual/Monicalite/c4b2fdd9818173cf47f07849692e4291.png">
-</div>
+    <div style="text-align:center;margin:8px;">
+        <img alt="image.png" src="../../assets/images/aimemanual/Monicalite/c4b2fdd9818173cf47f07849692e4291.png">
+    </div>
 
-<div style="text-align:center;margin:8px;">
-    <img alt="image.png" src="../../assets/images/aimemanual/Monicalite/image%205.png">
-</div>
+    <div style="text-align:center;margin:8px;">
+        <img alt="image.png" src="../../assets/images/aimemanual/Monicalite/image%205.png">
+    </div>
+
+#### chunithm无法使用读卡器
+!!! info ""
+    - 从luminous+版本开始，读卡器可能出现游戏自检aimebad的情况，需要在游戏内重新插拔读卡器才能正常使用，目前已经发现使用高波特率模式才能正常运行，具体操作如下：
+    - 首先需要确保使用了正确的chusanApp.exe和amdaemon.exe
+    - 修改游戏文件夹的三个json文件，分别是config_cvt.json，config_sp.json，config_hook.json
+    - 将这三个文件中的”high_baudrate”后面的“false”都改为”true”并且保存
+
+    <div style="text-align:center;margin:8px;">
+        <img alt="image.png" src="../../assets/images/aimemanual/Monicalite/image%206.png">
+    </div>
+
+    <div style="text-align:center;margin:8px;">
+        <img alt="image.png" src="../../assets/images/aimemanual/Monicalite/image7.png">
+    </div>
+
+#### spice无法识别读卡器
+!!! info ""
+    - 使用了过旧版本的spice，请更新新版本。
