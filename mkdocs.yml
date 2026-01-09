@@ -5,7 +5,7 @@ site_dir: site
 
 theme:
   name: material
-  language: en
+  language: zh
   features:
     - navigation.tabs
     - navigation.tabs.sticky
@@ -42,6 +42,10 @@ nav:
       - 概览: AimeManual/index.md
       - MonicaLite读卡器: AimeManual/MonicaLite.md
       - Kobato读卡器: AimeManual/kobato.md
+  - CurvaManual:
+      - 概览: CurvaManual/index.md
+  - LinneaManual:
+      - 概览: LinneaManual/index.md
 
 plugins:
   - search

@@ -18,7 +18,7 @@
     </li>
     <li>
         <a class="link" href="kobato">
-            <span class="txt">kobato读卡器使用教程</span>
+                <img src="../../assets/images/aimemanual/kobato/kbt.png"/>
         </a>
         <a class="link" href="kobato">
             <h4 style="padding-left: 12px;">Kobato 读卡器</h4>
