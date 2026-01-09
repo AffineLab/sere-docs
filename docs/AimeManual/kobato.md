@@ -1,7 +1,7 @@
 # Kobato读卡器使用教程
 
 <div style="text-align:center;margin:8px;">
-    <img alt="image.png" src="../../assets/images/aimemanual/kobato/kbt.png">
+    <img alt="image.png" src="../../assets/images/aimemanual/kobato/kobato.png">
 </div>
 
 ## 读卡器基本介绍
