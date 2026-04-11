@@ -162,11 +162,11 @@ song_no=[]
         <img alt="image.png" src="../../assets/images/aimemanual/Monicalite/83f1c086-bc12-4822-ae94-e6dabb23230c.png">
     </div>
 
-### 常见问题
+### Munet相关问题
 
 #### 关于munet无法使用读卡器
 !!! info ""
-    1.懒人包导致的问题，将最底下的压缩包解压即可。
+    1.无法识别读卡器：懒人包导致的问题，将最底下的压缩包解压即可。
 
     <div style="text-align:center;margin:8px;">
         <img alt="image.png" src="../../assets/images/aimemanual/Monicalite/image%204.png">
@@ -185,6 +185,13 @@ song_no=[]
     <div style="text-align:center;margin:8px;">
         <img alt="image.png" src="../../assets/images/aimemanual/Monicalite/image%205.png">
     </div>
+
+#### 真实卡号读取
+!!! info ""
+    从2604112032版本固件开始读卡器默认启用魔改输出真实卡号，后续推出的Monica系列上位机将支持关闭此功能，需要使用真实卡号请更新到该版本固件
+    [固件更新指南](#_5)
+
+### 常见问题
 
 #### chunithm无法使用读卡器
 !!! info ""
