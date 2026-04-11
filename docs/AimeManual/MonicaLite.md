@@ -164,13 +164,15 @@ song_no=[]
 
 ### 常见问题
 
-#### maimai无法识别读卡器
+#### 关于munet无法使用读卡器
 !!! info ""
-    用懒人包导致的问题，将最底下的压缩包解压即可。
+    1.懒人包导致的问题，将最底下的压缩包解压即可。
 
     <div style="text-align:center;margin:8px;">
         <img alt="image.png" src="../../assets/images/aimemanual/Monicalite/image%204.png">
     </div>
+
+    2.如果其它设置都正确并且重启过电脑，游戏仍然显示“Aime读卡器错误”。进入test模式，选择aime读卡器测试，如果能正常读卡说明是服务器问题，反之则是读卡器问题。
 
 #### maimai卡在aime check
 !!! info ""
